@@ -1,3 +1,4 @@
+//null safety concept in kotlin
 class Nullsefty {
 
     fun nullSafeFunction() {
