@@ -1,0 +1,323 @@
+<html>
+<head>
+<title>firstt.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+firstt.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">fun </span><span class="s1">main() {</span>
+    <span class="s0">val </span><span class="s1">name = </span><span class="s2">&quot;goog morinig noida&quot;</span>
+
+    <span class="s3">//this val variable can't be changable but we can cancatenation eith this variable</span>
+    <span class="s1">println(name + </span><span class="s4">145 </span><span class="s1">+ </span><span class="s2">&quot;  welcome to tuesday&quot;</span><span class="s1">)</span>
+
+    <span class="s3">//var data type u can modified it</span>
+
+    <span class="s0">var </span><span class="s1">changeable = </span><span class="s2">&quot;mohan&quot;</span>
+    <span class="s1">println(changeable)</span>
+    <span class="s3">/*note-var variable type decide when u have assign the value first 
+    * like in this case changeble variable type is String then u can only assign the value type String 
+    * if want to assign the different type then you have to type casting as below code show*/</span>
+    <span class="s1">changeable = </span><span class="s4">444.99</span><span class="s1">.toString()</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;changeable variable as String </span><span class="s0">$</span><span class="s1">changeable</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+    <span class="s0">var </span><span class="s1">changeable2 = </span><span class="s4">890.99</span>
+    <span class="s1">println(</span><span class="s2">&quot;changeable value as Float  </span><span class="s0">$</span><span class="s1">changeable2</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s3">//how to assign the value null and assign value later</span>
+    <span class="s0">var </span><span class="s1">greeting: String? = </span><span class="s0">null</span>
+    <span class="s1">println(greeting)</span>
+
+    <span class="s3">//assign the value in greeting variable</span>
+    <span class="s1">greeting = </span><span class="s4">33</span><span class="s1">.toString()</span>
+    <span class="s1">println(</span><span class="s2">&quot;greeting value changed </span><span class="s0">$</span><span class="s1">greeting</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+    <span class="s3">//Datatype in kotlin</span>
+    <span class="s0">val </span><span class="s1">myNum = </span><span class="s4">5             </span><span class="s3">// Int</span>
+    <span class="s0">val </span><span class="s1">myDoubleNum = </span><span class="s4">5.99    </span><span class="s3">// Double</span>
+    <span class="s0">val </span><span class="s1">myLetter = </span><span class="s2">'D'        </span><span class="s3">// Char</span>
+    <span class="s0">val </span><span class="s1">myBoolean = </span><span class="s0">true      </span><span class="s3">// Boolean</span>
+    <span class="s0">val </span><span class="s1">myText = </span><span class="s2">&quot;Hello&quot;      </span><span class="s3">// String</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;int type : </span><span class="s0">$</span><span class="s1">myNum</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;Double type : </span><span class="s0">$</span><span class="s1">myDoubleNum</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;my Letter : </span><span class="s0">$</span><span class="s1">myLetter</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;My boolean : </span><span class="s0">$</span><span class="s1">myBoolean</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;myText String :</span><span class="s0">$</span><span class="s1">myText</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+
+    <span class="s3">//specify the data type menually</span>
+    <span class="s0">val </span><span class="s1">myInt: Int = </span><span class="s4">12</span>
+    <span class="s0">val </span><span class="s1">myDouble: Double = </span><span class="s4">33.90</span>
+    <span class="s0">val </span><span class="s1">myCharcter: Char = </span><span class="s2">'A'</span>
+    <span class="s0">val </span><span class="s1">myBoolean2: Boolean = </span><span class="s0">true</span>
+    <span class="s0">val </span><span class="s1">myString2: String = </span><span class="s2">&quot;Aakash&quot;</span>
+    <span class="s0">val </span><span class="s1">myFloat2: Float = </span><span class="s4">33.3F</span>
+    <span class="s0">val </span><span class="s1">myByte: Byte = </span><span class="s4">45</span>
+    <span class="s0">val </span><span class="s1">myShort: Short = </span><span class="s4">333</span>
+    <span class="s0">val </span><span class="s1">myLong: Long = </span><span class="s4">200000000</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;Implicit Data type ..</span><span class="s0">\n\n</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;int type : </span><span class="s0">$</span><span class="s1">myInt</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;Double type : </span><span class="s0">$</span><span class="s1">myDouble</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;my Letter : </span><span class="s0">$</span><span class="s1">myCharcter</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;My boolean : </span><span class="s0">$</span><span class="s1">myBoolean2</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;myText String :</span><span class="s0">$</span><span class="s1">myString2</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s3">//The Byte data type can store whole numbers from -128 to 127.</span>
+    <span class="s1">println(</span><span class="s2">&quot;myByte Value :</span><span class="s0">$</span><span class="s1">myString2</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s3">//The Short data type can store whole numbers from -32768 to 32767:</span>
+    <span class="s1">println(</span><span class="s2">&quot;short value </span><span class="s0">$</span><span class="s1">myShort</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;long value </span><span class="s0">$</span><span class="s1">myLong</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+    <span class="s3">//Type conversion it is similar to java</span>
+
+
+    <span class="s3">/*  In Kotlin, numeric type conversion is different from Java. For example, 
+    it is not possible to convert an Int type to a Long type with the following code: 
+      val x: Int = 5 
+      val y: Long = x 
+      println(y) // Error: Type mismatch 
+      note-  To convert a numeric data type to another type, 
+      you must use one of the following functions: 
+      toByte(), toShort(), toInt(), toLong(), toFloat(), toDouble() or toChar(): 
+ 
+    */</span>
+
+    <span class="s3">//understan by code</span>
+    <span class="s0">val </span><span class="s1">x: Int = </span><span class="s4">50</span><span class="s0">;</span>
+    <span class="s0">val </span><span class="s1">y: Long = x.toLong()</span><span class="s0">;</span>
+    <span class="s1">println(</span><span class="s2">&quot;conversion data type </span><span class="s0">$</span><span class="s1">y</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+   <span class="s3">/* Kotlin divides the operators into the following groups: 
+   Arithmetic operators 
+   Assignment operators 
+   Comparison operators 
+   Logical operators*/</span>
+    <span class="s1">println(</span><span class="s2">&quot;operator chapter ...</span><span class="s0">\n\n</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+    <span class="s0">var  </span><span class="s1">a=</span><span class="s4">23</span><span class="s0">;</span>
+    <span class="s0">var  </span><span class="s1">b=</span><span class="s4">21</span><span class="s0">;</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;sum of two number :&quot; </span><span class="s1">+(a+b))</span>
+    <span class="s1">println(</span><span class="s2">&quot;subtract of two number : &quot;</span><span class="s1">+(a-b))</span>
+    <span class="s1">println(</span><span class="s2">&quot;multiple of two number : &quot;</span><span class="s1">+(a*b))</span>
+    <span class="s1">println(</span><span class="s2">&quot;division of two number :&quot; </span><span class="s1">+(a/b))</span><span class="s3">//1</span>
+    <span class="s1">println(</span><span class="s2">&quot;modulus of two number :&quot;</span><span class="s1">+(a%b))</span><span class="s3">//2</span>
+
+    <span class="s3">//kotlin comprision operator</span>
+    <span class="s3">//</span>
+    <span class="s1">println(</span><span class="s2">&quot;operator concept....</span><span class="s0">\n\n</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;equal operator &quot;</span><span class="s1">+(a==b))</span>
+    <span class="s1">println(</span><span class="s2">&quot;equal operator &quot;</span><span class="s1">+(a!=b))</span>
+    <span class="s1">println(</span><span class="s2">&quot;equal operator &quot;</span><span class="s1">+(a&gt;b))</span>
+    <span class="s1">println(</span><span class="s2">&quot;equal operator &quot;</span><span class="s1">+(a&lt;b))</span>
+
+    <span class="s3">//String DataType</span>
+    <span class="s0">var </span><span class="s1">myState:String</span>
+    <span class="s1">myState=</span><span class="s2">&quot;Bihar&quot;</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;state name </span><span class="s0">$</span><span class="s1">myState</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;state name &quot;</span><span class="s1">+myState[</span><span class="s4">0</span><span class="s1">])</span>
+    <span class="s1">println(</span><span class="s2">&quot;state name &quot;</span><span class="s1">+myState[</span><span class="s4">3</span><span class="s1">])</span>
+
+
+    <span class="s3">//Finding a String in a String</span>
+    <span class="s0">var </span><span class="s1">mySearchString=</span><span class="s2">&quot;i am from india&quot;</span>
+    <span class="s1">println(mySearchString)</span>
+
+    <span class="s0">var </span><span class="s1">searList=mySearchString.indexOf(</span><span class="s2">&quot;from&quot;</span><span class="s1">)</span>
+    <span class="s1">println(searList)</span>
+    <span class="s3">//String Concatenation</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;new String :&quot;</span><span class="s1">+mySearchString.plus(</span><span class="s2">&quot;in bihar&quot;</span><span class="s1">))</span>
+
+    <span class="s3">//String Templates/Interpolation</span>
+    <span class="s0">var </span><span class="s1">firstName = </span><span class="s2">&quot;John&quot;</span>
+    <span class="s0">var </span><span class="s1">lastName = </span><span class="s2">&quot;Doe&quot;</span>
+    <span class="s1">println(</span><span class="s2">&quot;My name is </span><span class="s0">$</span><span class="s1">firstName </span><span class="s0">$</span><span class="s1">lastName</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+
+    <span class="s3">//in kolin if else condition similar to java and also there some new</span>
+    <span class="s3">//syntax in if else</span>
+
+    <span class="s0">var </span><span class="s1">time=</span><span class="s4">90</span>
+    <span class="s0">if </span><span class="s1">(time&gt;=</span><span class="s4">90</span><span class="s1">)</span>
+    <span class="s1">{</span>
+        <span class="s1">println(</span><span class="s2">&quot;good morning india&quot;</span><span class="s1">)</span>
+        <span class="s1">time=</span><span class="s4">12</span>
+    <span class="s1">}</span><span class="s0">else</span>
+    <span class="s1">{</span>
+        <span class="s1">println(</span><span class="s2">&quot;good moring bihar&quot;</span><span class="s1">)</span>
+    <span class="s1">}</span>
+
+    <span class="s3">//enhance if else in kotlin</span>
+    <span class="s0">var </span><span class="s1">value=</span><span class="s0">if </span><span class="s1">(time&gt;</span><span class="s4">100</span><span class="s1">){</span>
+        <span class="s2">&quot;good day&quot;</span>
+    <span class="s1">}</span><span class="s0">else</span><span class="s1">{</span>
+       <span class="s2">&quot;bad day&quot;</span>
+    <span class="s1">}</span>
+    <span class="s1">println(</span><span class="s2">&quot;your answer : </span><span class="s0">$</span><span class="s1">value</span><span class="s2">&quot;</span><span class="s1">) </span><span class="s3">//bad day</span>
+
+    <span class="s3">//if only have one state the we remove curly braces</span>
+    <span class="s1">value=</span><span class="s0">if </span><span class="s1">(time&lt;</span><span class="s4">5</span><span class="s1">) </span><span class="s2">&quot;akash&quot; </span><span class="s0">else </span><span class="s2">&quot;sandeep&quot;</span>
+    <span class="s1">println(</span><span class="s2">&quot;answer </span><span class="s0">$</span><span class="s1">value</span><span class="s2">&quot;</span><span class="s1">)</span><span class="s3">//sandeep</span>
+
+
+    <span class="s3">//how to use conditional  operator when()..it is similar to java</span>
+    <span class="s0">val </span><span class="s1">day=</span><span class="s4">0</span>
+   <span class="s0">val </span><span class="s1">result= </span><span class="s0">when</span><span class="s1">(day)</span>
+    <span class="s1">{</span>
+        <span class="s4">0</span><span class="s1">-&gt; </span><span class="s2">&quot;0&quot;</span>
+        <span class="s4">1</span><span class="s1">-&gt; </span><span class="s2">&quot;1&quot;</span>
+        <span class="s4">2</span><span class="s1">-&gt; </span><span class="s2">&quot;2&quot;</span>
+        <span class="s4">3</span><span class="s1">-&gt; </span><span class="s2">&quot;3&quot;</span>
+        <span class="s4">4</span><span class="s1">-&gt; </span><span class="s2">&quot;4&quot;</span>
+        <span class="s4">5</span><span class="s1">-&gt; </span><span class="s2">&quot;5&quot;</span>
+        <span class="s4">6</span><span class="s1">-&gt; </span><span class="s2">&quot;6&quot;</span>
+        <span class="s4">7</span><span class="s1">-&gt; </span><span class="s2">&quot;7&quot;</span>
+       <span class="s0">else </span><span class="s1">-&gt; </span><span class="s2">&quot;invlid number&quot;</span>
+   <span class="s1">}</span>
+    <span class="s1">println(result)</span>
+
+    <span class="s3">//while loop ..it similar to java</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;while loop </span><span class="s0">\n</span><span class="s2">&quot;</span><span class="s1">)</span>
+    <span class="s0">var </span><span class="s1">i=</span><span class="s4">8</span><span class="s0">;</span>
+    <span class="s0">while </span><span class="s1">(i&gt;</span><span class="s4">0</span><span class="s1">)</span>
+    <span class="s1">{</span>
+        <span class="s1">println(</span><span class="s2">&quot;value of i = </span><span class="s0">$</span><span class="s1">i</span><span class="s2">&quot;</span><span class="s1">)</span>
+        <span class="s1">i--</span>
+    <span class="s1">}</span>
+
+    <span class="s3">//Kotlin Arrays</span>
+    <span class="s1">println(</span><span class="s2">&quot;Kotlin array ...</span><span class="s0">\n</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+    <span class="s0">var </span><span class="s1">array= arrayOf(</span><span class="s2">&quot;akash&quot;</span><span class="s0">,</span><span class="s2">&quot;manjeet&quot;</span><span class="s0">,</span><span class="s2">&quot;rohan&quot;</span><span class="s0">,</span><span class="s4">4</span><span class="s1">)</span>
+    <span class="s1">println(array[</span><span class="s4">3</span><span class="s1">])</span>
+
+    <span class="s1">array[</span><span class="s4">0</span><span class="s1">]=</span><span class="s2">&quot;variable change&quot;</span>
+
+    <span class="s1">println(</span><span class="s2">&quot;Size of array </span><span class="s0">${</span><span class="s1">array.size</span><span class="s0">}</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+     <span class="s1">array[</span><span class="s4">0</span><span class="s1">]=</span><span class="s2">&quot;akash&quot;</span>
+    <span class="s3">//in operator -&gt;You can use the in operator to check if an element exists in an array:</span>
+
+    <span class="s0">if</span><span class="s1">(</span><span class="s2">&quot;akash&quot; </span><span class="s0">in </span><span class="s1">array)</span>
+    <span class="s1">{</span>
+        <span class="s1">println(</span><span class="s2">&quot;name is exist&quot;</span><span class="s1">)</span>
+    <span class="s1">}</span><span class="s0">else</span>
+    <span class="s1">{</span>
+        <span class="s1">println(</span><span class="s2">&quot;name is not exit &quot;</span><span class="s1">)</span>
+    <span class="s1">}</span>
+
+    <span class="s3">//</span>
+    <span class="s0">for </span><span class="s1">( data </span><span class="s0">in </span><span class="s1">array)</span>
+    <span class="s1">{</span>
+        <span class="s1">println(data)</span>
+    <span class="s1">}</span>
+
+    <span class="s3">//in kotlin there is tradtional loop lik range</span>
+    <span class="s0">for </span><span class="s1">(result </span><span class="s0">in </span><span class="s2">'a'</span><span class="s1">..</span><span class="s2">'z'</span><span class="s1">)</span>
+    <span class="s1">{</span>
+        <span class="s1">print(result+</span><span class="s2">&quot; &quot;</span><span class="s1">)</span>
+    <span class="s1">}</span>
+    <span class="s0">for </span><span class="s1">(num </span><span class="s0">in </span><span class="s4">5</span><span class="s1">..</span><span class="s4">25</span><span class="s1">)</span>
+    <span class="s1">{</span>
+       <span class="s1">print(</span><span class="s2">&quot; &quot;</span><span class="s1">+num)</span>
+    <span class="s1">}</span>
+<span class="s3">//call the funtion from here</span>
+    <span class="s1">myFunction(</span><span class="s2">&quot;</span><span class="s0">\n</span><span class="s2">this is my first function...&quot;</span><span class="s1">)</span>
+
+    <span class="s1">myFunction2(</span><span class="s2">&quot;Aakas&quot;</span><span class="s0">,</span><span class="s4">22</span><span class="s1">)</span>
+<span class="s3">//return value to function</span>
+   <span class="s0">val </span><span class="s1">result3= getValueFrom(</span><span class="s4">77</span><span class="s0">,</span><span class="s4">23</span><span class="s1">)</span>
+    <span class="s1">println(</span><span class="s2">&quot;result3 value is :&quot;</span><span class="s1">+result3)</span>
+
+
+    <span class="s3">//passing the value foe constructor</span>
+    <span class="s0">val </span><span class="s1">c1 = Car(</span><span class="s2">&quot;Ford&quot;</span><span class="s0">, </span><span class="s2">&quot;Mustang&quot;</span><span class="s0">, </span><span class="s4">1969</span><span class="s1">)</span>
+    <span class="s3">/* to acess properties of car class 
+    * we have to create car */</span>
+
+
+    <span class="s0">val </span><span class="s1">car=Car(</span><span class="s2">&quot;Ford&quot;</span><span class="s0">, </span><span class="s2">&quot;Mustang&quot;</span><span class="s0">, </span><span class="s4">1969</span><span class="s1">)</span><span class="s0">;</span>
+    <span class="s1">println(</span><span class="s2">&quot;model </span><span class="s0">${</span><span class="s1">car.model</span><span class="s0">}\n </span><span class="s2">car name </span><span class="s0">${</span><span class="s1">car.brand</span><span class="s0">}  \n</span><span class="s2">year </span><span class="s0">${</span><span class="s1">car.year</span><span class="s0">}</span><span class="s2">&quot;</span><span class="s1">)</span>
+
+     <span class="s1">car.drive(</span><span class="s2">&quot;drive called&quot;</span><span class="s1">)</span>
+
+    <span class="s0">val </span><span class="s1">myChild=MyChildClass()</span>
+    <span class="s1">myChild.myFunction()</span><span class="s0">;</span>
+
+
+
+   <span class="s1">}</span><span class="s3">//function close</span>
+
+
+
+
+<span class="s0">fun </span><span class="s1">getValueFrom(i: Int</span><span class="s0">, </span><span class="s1">i1: Int): Int{</span>
+
+    <span class="s0">return </span><span class="s1">(i+i1)</span>
+<span class="s1">}</span>
+
+<span class="s0">fun </span><span class="s1">myFunction2(s: String</span><span class="s0">, </span><span class="s1">i: Int) {</span>
+    <span class="s1">println(s+ </span><span class="s2">&quot; is &quot; </span><span class="s1">+ i)</span>
+<span class="s1">}</span>
+
+<span class="s3">//funtion</span>
+<span class="s0">fun </span><span class="s1">myFunction(fname: String) {</span>
+    <span class="s1">println(fname + </span><span class="s2">&quot; akash&quot;</span><span class="s1">)</span>
+
+<span class="s1">}</span>
+
+
+<span class="s3">//oop concept</span>
+<span class="s0">class </span><span class="s1">Car(s: String</span><span class="s0">, </span><span class="s1">s1: String</span><span class="s0">, </span><span class="s1">i: Int) {</span>
+
+    <span class="s0">var </span><span class="s1">brand = s</span>
+    <span class="s0">var </span><span class="s1">model = s1</span>
+    <span class="s0">var </span><span class="s1">year = i</span>
+
+    <span class="s0">fun </span><span class="s1">drive(f:String)</span>
+    <span class="s1">{</span>
+     <span class="s1">println(f)</span>
+    <span class="s1">}</span>
+
+
+
+
+
+<span class="s1">}</span><span class="s3">//car class closed</span>
+
+<span class="s3">//inherit cancept</span>
+
+<span class="s3">// Superclass</span>
+<span class="s1">open </span><span class="s0">class </span><span class="s1">MyParentClass {</span>
+    <span class="s0">val </span><span class="s1">x = </span><span class="s4">5000</span>
+<span class="s1">}</span>
+
+<span class="s3">// Subclass</span>
+<span class="s0">class </span><span class="s1">MyChildClass: MyParentClass() {</span>
+    <span class="s0">fun </span><span class="s1">myFunction() {</span>
+        <span class="s1">println(x)  </span><span class="s3">// x is now inherited from the superclass</span>
+    <span class="s1">}</span>
+<span class="s1">}</span>
+
+
+
+
+</pre>
+</body>
+</html>
